@@ -22,5 +22,6 @@ trait AppkitTestingCommon {
   /** The address which corresponds to master key of the `mnemonic`. */
   val address = Address.fromMnemonic(
     NetworkType.MAINNET,
-    Mnemonic.create(mnemonic, SecretString.empty()))
+    Mnemonic.create(mnemonic, SecretString.empty()), 
+    false)
 }
